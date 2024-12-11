@@ -7,7 +7,7 @@ const MailboxList = ({ mailboxes }) => {
     <h2>Mailboxes</h2>
     <ul>
         {mailboxes.map(mailbox => (
-            <li key={mailbox._id}>
+            <li className='mail-box' key={mailbox._id}>
                 <Link to={`/mailboxes/${mailbox._id}`}>
                 Mailbox: {mailbox._id}
                 </Link>
